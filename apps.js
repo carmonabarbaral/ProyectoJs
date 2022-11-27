@@ -22,7 +22,7 @@ if (porcentajeDeAsistencia >= 80){
 let diasHabiles = parseInt (prompt ("Ingrese cantidad de días hábiles"));
  let asistenciaMedia = ( asistenciaTotal, diasHabiles) => asistenciaTotal / diasHabiles;
 console.log ("Tu asistencia media es " + ( asistenciaTotal / diasHabiles))
-
+//uso de objeto constructor//
 class Alumno {
     constructor(id,nombre,apellido,edad,grado,calificacion){
     this.id = id ;
@@ -46,7 +46,7 @@ class Alumno {
    const alumnos4=new Alumno(4,"Milo","Constantino",8, "3ro",9,false);
    const alumnos5=new Alumno(5,"Ian","Enrriquez",8, "3ro",9,false);
    const alumnos6=new Alumno(6,"Bianca","Lichieri",8, "3ro",5,true);
-   
+   //creacion de Array Alumnos//
     ArrayAlumnos = []
        ArrayAlumnos.push(alumnos1),
        ArrayAlumnos.push(alumnos2),
@@ -56,7 +56,7 @@ class Alumno {
        ArrayAlumnos.push(alumnos6),
    
       
-   
+   //uso del método forEach para identificar alumnos aprobados //
    ArrayAlumnos.forEach(ArrayAlumnos => 
        console.log (ArrayAlumnos.nombre));
    
